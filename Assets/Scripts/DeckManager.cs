@@ -15,8 +15,9 @@ public class DeckManager : MonoBehaviour
     [SerializeField] Texture2D buildModeCursor;
     [SerializeField] Texture2D defaultModeCursor;
     [SerializeField] GameObject card;
-    [SerializeField]GameObject towerPrefab;
+    [SerializeField] GameObject towerPrefab;
 
+    int DECK_SEPERATOR_CONST = 6;
 
     string PLACEABLE_TILE = "PlacementPos";
     string CARD = "Card";
@@ -27,7 +28,6 @@ public class DeckManager : MonoBehaviour
 
         DealFullHand();
     }
-
 
 
     private void Update()
@@ -57,7 +57,9 @@ public class DeckManager : MonoBehaviour
                 ReturnCardBack();
                 DefaultTheCursor();
             }
-            //right clicked
+
+
+            //merge action
             if (merging && LookForMouse() == CARD)
             {
                 //do checking to merge
@@ -75,9 +77,8 @@ public class DeckManager : MonoBehaviour
 
     private void PlaceTower(GameObject card) 
     {
-        //
-        //
-        //
+        GameObject tower = Instantiate(towerPrefab, tileLatest.transform);
+        tower.GetComponent<TowerScript>().InstallTower(card.GetComponent<CardScript>());
 
         DefaultTheCursor();
         Destroy(card);
@@ -131,7 +132,7 @@ public class DeckManager : MonoBehaviour
 
     private void MergeReady()
     {
-        cardLatest = cardBefore;
+        cardBefore = cardLatest;
         cardBefore.SetActive(false);
 
 
@@ -143,13 +144,32 @@ public class DeckManager : MonoBehaviour
         if (cardBefore.GetComponent<CardScript>().CanMergable(cardLatest.GetComponent<CardScript>()))
         {
             Vector2 position = cardLatest.transform.position;
-            cardLatest.SetActive(false);
+            int tier = cardLatest.GetComponent<CardScript>().GetTier();
+            int color = cardLatest.GetComponent<CardScript>().GetColor();
 
+            
             //instantiate on position same color but tier +1 card
-            Instantiate(card, position, Quaternion.identity);
+            GameObject mergedCard = Instantiate(card, position, Quaternion.identity);
+            
+            mergedCard.GetComponent<CardScript>().MergedCardCreation(cardLatest.GetComponent<CardScript>());
 
-
+            cardLatest.SetActive(false);
+            merging = false;
+            Destroy(cardBefore);
+            Destroy(cardLatest);
         }
+        else
+        {
+            CancelMerge();
+        }
+    }
+
+    private void CancelMerge()
+    {
+        cardBefore.SetActive(true);
+        cardLatest = cardBefore;
+
+        merging = false;
     }
 
     private void DefaultTheCursor()
@@ -161,12 +181,13 @@ public class DeckManager : MonoBehaviour
 
     private void DealFullHand()
     {
-        for (int i = -15; i < 16; i += 6)
+        for (int i = -2; i < 3; i++)
         {
-            Instantiate(card, new Vector3(gameObject.transform.position.x + i,
-                gameObject.transform.position.y, 0),
-                Quaternion.identity);
-           
+            GameObject cardThis = Instantiate(card, new Vector3(gameObject.transform.position.x + (i * DECK_SEPERATOR_CONST),
+                    gameObject.transform.position.y, 0),
+                    Quaternion.identity);
+            cardThis.GetComponent<CardScript>().RandomCardCreation();
+
         }
     }
 
