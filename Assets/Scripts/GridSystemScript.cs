@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GridSystemScript : MonoBehaviour
 {
     [SerializeField]GameObject placableTilesParent;
     [SerializeField] GameObject tilePrefab;
@@ -14,8 +14,8 @@ public class GameManager : MonoBehaviour
     float yDiff = 2f;
 
     void Start()
-    {
-        for (float positionY = startPos.y; positionY < endPos.y; positionY += yDiff)
+    { 
+        for (float positionY = startPos.y; positionY > endPos.y; positionY -= yDiff)
         {
             for (float positionX = startPos.x; positionX < endPos.x; positionX += xDiff)
             {
@@ -27,5 +27,4 @@ public class GameManager : MonoBehaviour
 
 
     }
-
 }
