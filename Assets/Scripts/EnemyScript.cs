@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] int health;
+    [SerializeField] int damage;
+
+    private void DealDamage()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void TakeDamage(int damageAmount)
     {
-        
+        health -= damageAmount;
+
+        if(health <= 0)
+        {
+            Die();
+        }
+
     }
+
+    private void Die()
+    {
+        gameObject.SetActive(false);
+    }
+
+
+
+
 }

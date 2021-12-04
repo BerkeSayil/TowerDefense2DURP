@@ -74,7 +74,6 @@ public class DeckManager : MonoBehaviour
         
 
     }
-
     private void PlaceTower(GameObject card) 
     {
         GameObject tower = Instantiate(towerPrefab, tileLatest.transform);
@@ -82,6 +81,8 @@ public class DeckManager : MonoBehaviour
 
         DefaultTheCursor();
         Destroy(card);
+        AstarPath.active.Scan();
+
     }
 
     private string LookForMouse()

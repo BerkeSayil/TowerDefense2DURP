@@ -9,6 +9,9 @@ TagManager:
   - Tower
   - PlacementPos
   - Garbage
+  - Enemy
+  - Spawn
+  - Base
   layers:
   - Default
   - TransparentFX
