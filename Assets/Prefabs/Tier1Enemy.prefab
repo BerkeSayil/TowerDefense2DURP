@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 715701135107908084}
   - component: {fileID: 957793972256050219}
   - component: {fileID: 6048546307570542899}
-  - component: {fileID: -6775346226826018825}
   - component: {fileID: 1423982526278057984}
+  - component: {fileID: -3225544769376039480}
   m_Layer: 0
   m_Name: Tier1Enemy
   m_TagString: Enemy
@@ -105,20 +105,6 @@ MonoBehaviour:
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
---- !u!114 &-6775346226826018825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3996329155088629735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  target: {fileID: 7994482121249424866, guid: 207b1bbf6947c0447816ef59efe9d0e2, type: 3}
 --- !u!114 &1423982526278057984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +119,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   damage: 1
+--- !u!114 &-3225544769376039480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3996329155088629735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  target: {fileID: 7994482121249424866, guid: 207b1bbf6947c0447816ef59efe9d0e2, type: 3}
 --- !u!1 &7125538115152281895
 GameObject:
   m_ObjectHideFlags: 0

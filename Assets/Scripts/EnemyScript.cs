@@ -9,7 +9,7 @@ public class EnemyScript : MonoBehaviour
 
     private void DealDamage()
     {
-
+        //TODO make it deal damage we have squares representing hearts they need to go down when base is toched
     }
 
     public void TakeDamage(int damageAmount)

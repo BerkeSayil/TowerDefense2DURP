@@ -6,6 +6,7 @@ public class TowerScript : MonoBehaviour
 {
     
     GameObject[] towerList = new GameObject[3];
+    public List<GameObject> enemiesInRange = new List<GameObject>();
 
     RandomEnemyGenerator gameController;
     GameObject baseObject;
@@ -16,6 +17,7 @@ public class TowerScript : MonoBehaviour
 
     int tier;
     int color;
+    int range;
     float minDistance = 10000;
     float timer = 0;
     float cooldown;
@@ -26,7 +28,7 @@ public class TowerScript : MonoBehaviour
     private void Start()
     {
 
-        AssignCooldown();
+        AssignTierThings();
 
         gameController = GameObject.FindGameObjectWithTag(tagGameController)
             .GetComponent<RandomEnemyGenerator>();
@@ -34,6 +36,7 @@ public class TowerScript : MonoBehaviour
         baseObject = GameObject.FindGameObjectWithTag(tagBaseObject);
 
         nearestEnemy = gameObject;
+
 
     }
     public void InstallTower(CardScript card)
@@ -67,48 +70,58 @@ public class TowerScript : MonoBehaviour
 
         for(int i = 0; i < gameController.enemies.Count; i++)
         {
+
             if (!gameController.enemies[i].activeInHierarchy || gameController.enemies[i] == null)
             {
                 gameController.enemies.Remove(gameController.enemies[i]);
                 minDistance = 10000;
                 return null;
                 
-                
             }
             else
             {
+                
                 GameObject recentEnemy = gameController.enemies[i];
                 float distanceRecent = Vector2.Distance(recentEnemy.transform.position,
                     baseObject.transform.position);
 
-                if (minDistance > distanceRecent)
+                if(distanceRecent < range)
                 {
-                    nearestEnemy = recentEnemy;
-                    minDistance = distanceRecent;
-                }
+                    if (minDistance > distanceRecent)
+                    {
+                        nearestEnemy = recentEnemy;
+                        minDistance = distanceRecent;
 
+                        return recentEnemy;
+                    }
+                }
+ 
             }
             
         }
-        Debug.DrawLine(this.gameObject.transform.position, nearestEnemy.transform.position);
-        return nearestEnemy;
+
+        return null;
+        
 
     }
 
-    private void AssignCooldown()
+    private void AssignTierThings()
     {
         if(tier == 0)
         {
-            cooldown = 1.5f;
+            cooldown = 1f;
+            range = 5;
 
         }else if(tier == 1)
         {
             cooldown = 0.3f;
+            range = 8;
 
-        }else if(tier == 2)
+        }
+        else if(tier == 2)
         {
-            cooldown = 0.15f;
-
+            cooldown = 0.1f;
+            range = 12;
         }
     }
 
@@ -124,6 +137,7 @@ public class TowerScript : MonoBehaviour
             {
                 enemy.GetComponent<EnemyScript>().TakeDamage(1);
                 timer = 0;
+                Debug.Log("BOOM HEADSHOT!!!!!");
             }
         }
         

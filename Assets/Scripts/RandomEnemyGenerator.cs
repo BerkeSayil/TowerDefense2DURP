@@ -11,7 +11,10 @@ public class RandomEnemyGenerator : MonoBehaviour
     string spawnTag = "Spawn";
     int spawnedEnemy = 0;
     float timePassed = 0;
-    float timeDelayBetween = 0.3f;
+
+    //generation size and speed variables
+    [SerializeField]float timeDelayBetween = 0.3f;
+    [SerializeField] int enemyCount = 120;
 
     private void Start()
     {
@@ -22,7 +25,7 @@ public class RandomEnemyGenerator : MonoBehaviour
     {
         if (timePassed >= timeDelayBetween)
         {
-            if (spawnedEnemy <= 50) { 
+            if (spawnedEnemy <= enemyCount) { 
 
                 RandomlySpawnEnemy();
                 timePassed = 0;
