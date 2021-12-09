@@ -15,9 +15,13 @@ public class TowerScript : MonoBehaviour
     string tagGameController = "GameController";
     string tagBaseObject = "Base";
 
+    //specs
     int tier;
     int color;
     int range;
+    int health;
+
+    //shooting
     float minDistance = 10000;
     float timer = 0;
     float cooldown;
@@ -111,17 +115,20 @@ public class TowerScript : MonoBehaviour
         {
             cooldown = 1f;
             range = 5;
+            health = 2;
 
         }else if(tier == 1)
         {
             cooldown = 0.3f;
             range = 8;
+            health = 4;
 
         }
         else if(tier == 2)
         {
             cooldown = 0.1f;
             range = 12;
+            health = 6;
         }
     }
 
@@ -142,6 +149,17 @@ public class TowerScript : MonoBehaviour
         }
         
         
+    }
+
+    public void GetHit(int damage)
+    {
+        health -= damage;
+
+        if(health <= 0)
+        {
+            gameObject.SetActive(false);
+        }
+
     }
 
 }

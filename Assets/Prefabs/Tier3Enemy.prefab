@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 7595232394705237048}
   - component: {fileID: 511771389961324829}
   - component: {fileID: -5077641094090938128}
+  - component: {fileID: 7796354638200335480}
   m_Layer: 0
   m_Name: Tier3Enemy
   m_TagString: Enemy
@@ -298,3 +299,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 6
   damage: 4
+--- !u!58 &7796354638200335480
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7632424980380245405}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5

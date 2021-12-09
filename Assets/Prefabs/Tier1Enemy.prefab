@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6048546307570542899}
   - component: {fileID: 1423982526278057984}
   - component: {fileID: -3225544769376039480}
+  - component: {fileID: 7808998256071770967}
   m_Layer: 0
   m_Name: Tier1Enemy
   m_TagString: Enemy
@@ -133,6 +134,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 7994482121249424866, guid: 207b1bbf6947c0447816ef59efe9d0e2, type: 3}
+--- !u!58 &7808998256071770967
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3996329155088629735}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0042455196, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.2622527
 --- !u!1 &7125538115152281895
 GameObject:
   m_ObjectHideFlags: 0
