@@ -11,7 +11,7 @@ public class GridSystemScript : MonoBehaviour
     Vector2 endPos = new Vector2(30f, -10f);
 
     float xDiff = 3.54f; //depends on sprite
-    float yDiff = 3f;   //same depends on sprite
+    float yDiff = 3f;   //depends on sprite
     
     void Start()
     {
@@ -47,6 +47,9 @@ public class GridSystemScript : MonoBehaviour
 
     private void DeleteUnderBase(GameObject tile)
     {
+
+        //base building icin uzakligi kontrol et ve ic iceyse sil
+
         ColliderDistance2D colliderDis = tile.GetComponent<CircleCollider2D>
             ().Distance(baseBuilding.GetComponent<BoxCollider2D>());
         if (colliderDis.distance < 0)
@@ -55,4 +58,5 @@ public class GridSystemScript : MonoBehaviour
         }
 
     }
+
 }

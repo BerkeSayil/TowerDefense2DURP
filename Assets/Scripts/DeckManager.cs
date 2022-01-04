@@ -71,6 +71,11 @@ public class DeckManager : MonoBehaviour
             }
         }
 
+        //when next round pressed deal full hand + add next waves enemies to the number of enemies to be spawned
+        
+
+
+
         
 
     }

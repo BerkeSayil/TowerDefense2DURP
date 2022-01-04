@@ -5,7 +5,7 @@ using UnityEngine;
 public class UiManager : MonoBehaviour
 {
     [SerializeField] GameObject hearthObjects;
-    GameObject[] hearts = new GameObject[3];
+    GameObject[] hearts = new GameObject[8];
 
     int heartAmount = 0;
 
@@ -26,9 +26,22 @@ public class UiManager : MonoBehaviour
 
     public void RemoveHearth()
     {
-        heartAmount -= 1;
-        hearts[heartAmount].SetActive(false);
+        if(heartAmount > 0)
+        {
+            heartAmount -= 1;
+            hearts[heartAmount].SetActive(false);
+        }
+        else
+        {
+            LoseGameCanvas();
+        }
+        
 
+    }
+
+    private void LoseGameCanvas()
+    {
+        Time.timeScale = 0;
 
     }
 }

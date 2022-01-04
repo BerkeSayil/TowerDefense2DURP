@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1423982526278057984}
   - component: {fileID: -3225544769376039480}
   - component: {fileID: 7808998256071770967}
+  - component: {fileID: -3998464653229966529}
   m_Layer: 0
   m_Name: Tier1Enemy
   m_TagString: Enemy
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 3996329155088629735}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 8620117278160053787}
   m_Father: {fileID: 0}
@@ -147,9 +148,30 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0042455196, y: 0}
+  m_Offset: {x: -0.0059707463, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2622527
+  m_Radius: 0.3398882
+--- !u!50 &-3998464653229966529
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3996329155088629735}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &7125538115152281895
 GameObject:
   m_ObjectHideFlags: 0

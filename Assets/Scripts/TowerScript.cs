@@ -4,16 +4,9 @@ using UnityEngine;
 
 public class TowerScript : MonoBehaviour
 {
-    
+
     GameObject[] towerList = new GameObject[3];
-    public List<GameObject> enemiesInRange = new List<GameObject>();
 
-    RandomEnemyGenerator gameController;
-    GameObject baseObject;
-    GameObject nearestEnemy;
-
-    string tagGameController = "GameController";
-    string tagBaseObject = "Base";
 
     //specs
     int tier;
@@ -22,25 +15,23 @@ public class TowerScript : MonoBehaviour
     int health;
 
     //shooting
-    float minDistance = 10000;
     float timer = 0;
     float cooldown;
 
     int COLOR_AMOUNT = 3;
 
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(this.transform.position, range);
+    }
 
     private void Start()
     {
 
         AssignTierThings();
 
-        gameController = GameObject.FindGameObjectWithTag(tagGameController)
-            .GetComponent<RandomEnemyGenerator>();
-
-        baseObject = GameObject.FindGameObjectWithTag(tagBaseObject);
-
-        nearestEnemy = gameObject;
-
+        //make tile beneath tagges as noRoad
 
     }
     public void InstallTower(CardScript card)
@@ -59,55 +50,44 @@ public class TowerScript : MonoBehaviour
         tower.SetActive(true);
 
         tower.transform.GetChild(tier).gameObject.SetActive(true);
-        
+
     }
 
     private void Update()
     {
-        GameObject enemy = FindNearestToBaseEnemy();
+
+        GameObject enemy = FindNearestEnemy();
 
         ShootAt(enemy);
     }
 
-    private GameObject FindNearestToBaseEnemy()
+    private GameObject FindNearestEnemy()
     {
+        Collider2D[] collider2Ds = Physics2D.OverlapCircleAll(gameObject.transform.position, range);
+        Collider2D nearestCollider = null;
 
-        for(int i = 0; i < gameController.enemies.Count; i++)
+        float minSqrtDist = Mathf.Infinity;
+
+        for (int i = 0; i < collider2Ds.Length; i++)
         {
-
-            if (!gameController.enemies[i].activeInHierarchy || gameController.enemies[i] == null)
+            if (collider2Ds[i].CompareTag("Enemy"))
             {
-                gameController.enemies.Remove(gameController.enemies[i]);
-                minDistance = 10000;
-                return null;
-                
-            }
-            else
-            {
-                
-                GameObject recentEnemy = gameController.enemies[i];
-                float distanceRecent = Vector2.Distance(recentEnemy.transform.position,
-                    baseObject.transform.position);
-
-                if(distanceRecent < range)
+                float sqrtDistanceToTower = (gameObject.transform.position - collider2Ds[i].transform.position).sqrMagnitude;
+                if (sqrtDistanceToTower < minSqrtDist)
                 {
-                    if (minDistance > distanceRecent)
-                    {
-                        nearestEnemy = recentEnemy;
-                        minDistance = distanceRecent;
+                    minSqrtDist = sqrtDistanceToTower;
+                    nearestCollider = collider2Ds[i];
 
-                        return recentEnemy;
-                    }
+                    return nearestCollider.gameObject;
                 }
- 
             }
             
+
         }
 
         return null;
-        
-
     }
+
 
     private void AssignTierThings()
     {
@@ -135,18 +115,23 @@ public class TowerScript : MonoBehaviour
 
     private void ShootAt(GameObject enemy)
     {
-        timer += Time.deltaTime;
-
-
-        if(timer >= cooldown)
+        if(enemy != null)
         {
-            if (enemy != null)
+            timer += Time.deltaTime;
+
+
+            if (timer >= cooldown)
             {
-                enemy.GetComponent<EnemyScript>().TakeDamage(1);
-                timer = 0;
-                Debug.Log("BOOM HEADSHOT!!!!!");
+                if (enemy != null)
+                {
+                    enemy.GetComponent<EnemyScript>().TakeDamage(1);
+                    timer = 0;
+                    //hit
+                    Debug.DrawLine(gameObject.transform.position, enemy.transform.position, Color.red, 0.3f, false);
+                }
             }
         }
+        
         
         
     }
