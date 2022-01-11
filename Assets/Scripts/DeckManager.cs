@@ -22,16 +22,21 @@ public class DeckManager : MonoBehaviour
     string PLACEABLE_TILE = "PlacementPos";
     string CARD = "Card";
 
+    float timer;
+    [SerializeField]float handTimerCoolDown = 20f;
+
     private void Start()
     {
         DefaultTheCursor();
 
         DealFullHand();
+
     }
 
 
     private void Update()
     {
+
         if(Input.GetMouseButtonDown(0)){
             //left clicked
             if (haveCard)
@@ -71,14 +76,37 @@ public class DeckManager : MonoBehaviour
             }
         }
 
-        //when next round pressed deal full hand + add next waves enemies to the number of enemies to be spawned
+        HandTimer();
         
+    }
+
+    private void HandTimer()
+    {
+
+        timer += Time.deltaTime;
 
 
+        if (timer >= handTimerCoolDown)
+        {
+            timer = 0;
+            if (merging)
+            {
+                CancelMerge();
+            }
+            
+            haveCard = false;
+            DefaultTheCursor();
 
-        
+
+            DeleteHand();
+            DealFullHand();
+           
+        }
+
 
     }
+
+
     private void PlaceTower(GameObject card) 
     {
         GameObject tower = Instantiate(towerPrefab, tileLatest.transform);
@@ -195,6 +223,19 @@ public class DeckManager : MonoBehaviour
             cardThis.GetComponent<CardScript>().RandomCardCreation();
 
         }
+    }
+
+    private void DeleteHand()
+    {
+        GameObject[] cards = GameObject.FindGameObjectsWithTag(CARD);
+
+        for (int i = 0; i < cards.Length; i++)
+        {
+            cards[i].SetActive(false);
+            
+        }
+
+
     }
 
 }
