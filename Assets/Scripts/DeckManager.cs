@@ -10,7 +10,8 @@ public class DeckManager : MonoBehaviour
 
     bool haveCard = false;
     bool merging = false;
-   
+
+    string NO_TAG = "No tag";
 
     [SerializeField] Texture2D buildModeCursor;
     [SerializeField] Texture2D defaultModeCursor;
@@ -41,7 +42,6 @@ public class DeckManager : MonoBehaviour
             //left clicked
             if (haveCard)
             {
-                
                 //check placable
                 if (LookForMouse() == PLACEABLE_TILE)
                 {
@@ -62,18 +62,21 @@ public class DeckManager : MonoBehaviour
                 ReturnCardBack();
                 DefaultTheCursor();
             }
-
-
-            //merge action
-            if (merging && LookForMouse() == CARD)
+            else
             {
-                //do checking to merge
-                MergeCards();
+
+                //merge action
+                if (merging && LookForMouse() == CARD)
+                {
+                    //do checking to merge
+                    MergeCards();
+                }
+                else if (LookForMouse() == CARD)
+                {
+                    MergeReady();
+                }
             }
-            else if (LookForMouse() == CARD)
-            {
-                MergeReady();
-            }
+           
         }
 
         HandTimer();
@@ -138,7 +141,7 @@ public class DeckManager : MonoBehaviour
         }
         else
         {
-            return "No tag";   
+            return NO_TAG;   
         }
 
     }

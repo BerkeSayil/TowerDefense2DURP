@@ -30,11 +30,14 @@ public class CardScript : MonoBehaviour
     public void RandomCardCreation()
     {
         //assign random color
+        
         color = Random.Range(3, 6);
         childs[color].SetActive(true);
 
         //assign random tier
-        tier = Random.Range(0, 3);
+        int[] tierWeight = { 0, 0, 0, 0, 1, 1, 2 };
+
+        tier = tierWeight[Random.Range(0, 7)];
         childs[tier].SetActive(true);
 
     }

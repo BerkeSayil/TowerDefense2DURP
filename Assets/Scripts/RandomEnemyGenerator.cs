@@ -9,12 +9,11 @@ public class RandomEnemyGenerator : MonoBehaviour
     public List<GameObject> enemies = new List<GameObject>();
 
     string spawnTag = "Spawn";
-    int spawnedEnemy = 0;
     float timePassed = 0;
+    int enemyCount = 0;
 
     //generation size and speed variables
-    [SerializeField]float timeDelayBetween = 0.3f;
-    [SerializeField] int enemyCount = 120;
+    float timeDelayBetween = 0.3f;
 
     private void Start()
     {
@@ -25,11 +24,11 @@ public class RandomEnemyGenerator : MonoBehaviour
     {
         if (timePassed >= timeDelayBetween)
         {
-            if (spawnedEnemy <= enemyCount) { 
+            RandomlySpawnEnemy();
+            timePassed = 0;
+            MakeHarder();
 
-                RandomlySpawnEnemy();
-                timePassed = 0;
-            }
+            Debug.Log(enemyCount);
         }
         else
         {
@@ -38,18 +37,50 @@ public class RandomEnemyGenerator : MonoBehaviour
 
 
     }
+
+    private void MakeHarder()
+    {
+        
+        switch (enemyCount)
+        {
+            case 74:
+                timeDelayBetween = 0.25f;
+                break;
+            case 164:
+                timeDelayBetween = 0.21f;
+                break;
+            case 220:
+                timeDelayBetween = 0.17f;
+                break;
+            case 282:
+                timeDelayBetween = 0.12f;
+                break;
+            case 380:
+                timeDelayBetween = 0.075f;
+                break;
+            case 520:
+                timeDelayBetween = 0.0342f;
+                break;
+            case 640:
+                timeDelayBetween = 0.01666f; //its hell
+                break;
+        }
+    }
+
     private void RandomlySpawnEnemy()
     {
-        int randomNum = Random.Range(0, 5);
+        int[] enemyTypeWeight = {0,0,0,0,0,0,0,1,1,1,1,2,2,2 };
+
+        int randomNum = enemyTypeWeight[Random.Range(0, enemyTypeWeight.Length)];
         int randomSpawn = Random.Range(0, 15);
 
 
-        if(randomNum < enemyList.Length)
+        if (randomNum < enemyList.Length)
         {
             GameObject enemy = Instantiate(enemyList[randomNum], spawnList[randomSpawn].transform);
 
             enemies.Add(enemy);
-            spawnedEnemy += 1;
+            enemyCount += 1;
         }
 
 
