@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - Spawn
   - Base
+  - Placed
   layers:
   - Default
   - TransparentFX

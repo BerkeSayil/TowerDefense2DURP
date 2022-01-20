@@ -10,6 +10,7 @@ public class DeckManager : MonoBehaviour
 
     bool haveCard = false;
     bool merging = false;
+    bool firstTime = true;
 
     string NO_TAG = "No tag";
 
@@ -29,9 +30,7 @@ public class DeckManager : MonoBehaviour
     private void Start()
     {
         DefaultTheCursor();
-
-        DealFullHand();
-
+      
     }
 
 
@@ -70,10 +69,15 @@ public class DeckManager : MonoBehaviour
                 {
                     //do checking to merge
                     MergeCards();
+
                 }
                 else if (LookForMouse() == CARD)
                 {
                     MergeReady();
+
+                }else if (merging && LookForMouse() != CARD)
+                {
+                    CancelMerge();
                 }
             }
            
@@ -87,7 +91,7 @@ public class DeckManager : MonoBehaviour
     {
 
         timer += Time.deltaTime;
-
+        
 
         if (timer >= handTimerCoolDown)
         {
@@ -103,7 +107,12 @@ public class DeckManager : MonoBehaviour
 
             DeleteHand();
             DealFullHand();
-           
+
+        }
+        else if(firstTime)
+        {
+            DealFullHand();
+            firstTime = false;
         }
 
 
@@ -112,11 +121,15 @@ public class DeckManager : MonoBehaviour
 
     private void PlaceTower(GameObject card) 
     {
+        
         GameObject tower = Instantiate(towerPrefab, tileLatest.transform);
         tower.GetComponent<TowerScript>().InstallTower(card.GetComponent<CardScript>());
 
         DefaultTheCursor();
         Destroy(card);
+
+        tileLatest.tag = "Placed";
+
         AstarPath.active.Scan();
 
     }

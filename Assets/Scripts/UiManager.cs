@@ -5,7 +5,9 @@ using UnityEngine;
 public class UiManager : MonoBehaviour
 {
     [SerializeField] GameObject hearthObjects;
+    [SerializeField] GameObject unHearthObjects;
     GameObject[] hearts = new GameObject[8];
+    GameObject[] heartsEmpty = new GameObject[8];
 
     int heartAmount = 0;
 
@@ -14,6 +16,7 @@ public class UiManager : MonoBehaviour
         for (int i = 0; i < hearts.Length; i++)
         {
             hearts[i] = hearthObjects.transform.GetChild(i).gameObject;
+            heartsEmpty[i] = unHearthObjects.transform.GetChild(i).gameObject;
             heartAmount += 1;
 
         }
@@ -30,6 +33,7 @@ public class UiManager : MonoBehaviour
         {
             heartAmount -= 1;
             hearts[heartAmount].SetActive(false);
+            heartsEmpty[heartAmount].SetActive(true);
         }
         else
         {

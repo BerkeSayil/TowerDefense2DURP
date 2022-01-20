@@ -62,7 +62,37 @@ public class RandomEnemyGenerator : MonoBehaviour
                 timeDelayBetween = 0.0342f;
                 break;
             case 640:
-                timeDelayBetween = 0.01666f; //its hell
+                timeDelayBetween = 0.01666f; 
+                break;
+            case 920:
+                timeDelayBetween = 0.0133f;
+                break;
+            case 1890:
+                timeDelayBetween = 0.01124f;
+                break;
+            case 2790:
+                timeDelayBetween = 0.01f;
+                break;
+            case 4503:
+                timeDelayBetween = 0.0086f;
+                break;
+            case 6782:
+                timeDelayBetween = 0.006532f;
+                break;
+            case 7530:
+                timeDelayBetween = 0.00521f;
+                break;
+            case 8451:
+                timeDelayBetween = 0.00431f;
+                break;
+            case 9231:
+                timeDelayBetween = 0.00341f;
+                break;
+            case 11803:
+                timeDelayBetween = 0.00213f;
+                break;
+            case 15001:
+                timeDelayBetween = 0.00134f;
                 break;
         }
     }

@@ -7,6 +7,7 @@ public class TowerScript : MonoBehaviour
 
     GameObject[] towerList = new GameObject[3];
 
+   
 
     //specs
     int tier;
@@ -17,6 +18,7 @@ public class TowerScript : MonoBehaviour
     //shooting
     float timer = 0;
     float cooldown;
+    float turnSpeed = 5f;
 
     int COLOR_AMOUNT = 3;
 
@@ -57,9 +59,24 @@ public class TowerScript : MonoBehaviour
     {
 
         GameObject enemy = FindNearestEnemy();
-
+        RotateToEnemy(enemy);
         ShootAt(enemy);
     }
+    private void RotateToEnemy(GameObject rotatePos)
+    {
+        if(rotatePos != null)
+        {
+            float offset = -90f;
+            Vector2 direction = rotatePos.transform.position - transform.position;
+            direction.Normalize();
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            //transform.rotation = Quaternion.Euler();
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(Vector3.forward * (angle + offset)), Time.deltaTime * turnSpeed);
+        }
+        
+
+    }
+
 
     private GameObject FindNearestEnemy()
     {
