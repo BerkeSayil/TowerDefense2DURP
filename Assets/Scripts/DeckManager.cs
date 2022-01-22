@@ -8,7 +8,7 @@ public class DeckManager : MonoBehaviour
     GameObject cardLatest;
     GameObject tileLatest;
 
-    bool haveCard = false;
+    bool buildMode = false;
     bool merging = false;
     bool firstTime = true;
 
@@ -39,13 +39,13 @@ public class DeckManager : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0)){
             //left clicked
-            if (haveCard)
+            if (buildMode)
             {
                 //check placable
                 if (LookForMouse() == PLACEABLE_TILE)
                 {
                     PlaceTower(cardLatest);
-                    haveCard = false;
+                    CancelBuild();
                 }
 
             }else if(LookForMouse() == CARD)
@@ -56,10 +56,9 @@ public class DeckManager : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             //cancel building
-            if (haveCard)
+            if (buildMode)
             {
                 ReturnCardBack();
-                DefaultTheCursor();
             }
             else
             {
@@ -100,12 +99,9 @@ public class DeckManager : MonoBehaviour
             {
                 CancelMerge();
             }
+
+            CancelBuild();
             
-            haveCard = false;
-            DefaultTheCursor();
-
-
-            DeleteHand();
             DealFullHand();
 
         }
@@ -125,7 +121,6 @@ public class DeckManager : MonoBehaviour
         GameObject tower = Instantiate(towerPrefab, tileLatest.transform);
         tower.GetComponent<TowerScript>().InstallTower(card.GetComponent<CardScript>());
 
-        DefaultTheCursor();
         Destroy(card);
 
         tileLatest.tag = "Placed";
@@ -161,14 +156,14 @@ public class DeckManager : MonoBehaviour
 
     private void ReturnCardBack()
     {
-        haveCard = false;
+        CancelBuild();
 
         cardLatest.SetActive(true);
     }
 
     private void BuildMode()
     {
-        haveCard = true;
+        buildMode = true;
 
         //do what you want to card to show its selected
         cardLatest.SetActive(false);
@@ -217,9 +212,15 @@ public class DeckManager : MonoBehaviour
     private void CancelMerge()
     {
         cardBefore.SetActive(true);
-        cardLatest = cardBefore;
 
         merging = false;
+    }
+
+    private void CancelBuild()
+    {
+        buildMode = false;
+        DefaultTheCursor();
+
     }
 
     private void DefaultTheCursor()
@@ -231,6 +232,8 @@ public class DeckManager : MonoBehaviour
 
     private void DealFullHand()
     {
+        DeleteHand();
+
         for (int i = -2; i < 3; i++)
         {
             GameObject cardThis = Instantiate(card, new Vector3(gameObject.transform.position.x + (i * DECK_SEPERATOR_CONST),
@@ -249,6 +252,15 @@ public class DeckManager : MonoBehaviour
         {
             cards[i].SetActive(false);
             
+        }
+
+        if (buildMode)
+        {
+            CancelBuild();
+        }
+        if (merging)
+        {
+            CancelMerge();
         }
 
 

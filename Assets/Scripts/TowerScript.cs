@@ -110,14 +110,14 @@ public class TowerScript : MonoBehaviour
     {
         if(tier == 0)
         {
-            cooldown = 1f;
-            range = 5;
+            cooldown = 0.6f;
+            range = 7;
             health = 2;
 
         }else if(tier == 1)
         {
             cooldown = 0.3f;
-            range = 8;
+            range = 9;
             health = 4;
 
         }
