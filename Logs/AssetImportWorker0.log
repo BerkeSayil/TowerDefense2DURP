@@ -15,11 +15,11 @@ D:/Github/TowerDefense2DURP
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59303
+63302
 Successfully changed project path to: D:/Github/TowerDefense2DURP
 D:/Github/TowerDefense2DURP
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 83.91 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 53.89 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.12f1 (b3b2c6512326)
 [Subsystems] Discovering subsystems at path D:/Unity/EditorFolder/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
@@ -36,257 +36,41 @@ Initialize mono
 Mono path[0] = 'D:/Unity/EditorFolder/2020.3.12f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/EditorFolder/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity/EditorFolder/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56632
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56604
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/EditorFolder/2020.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Unity/EditorFolder/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002975 seconds.
+Registered in 0.001148 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 109.40 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 54.63 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.585 seconds
+- Completed reload, in  1.390 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007987 seconds.
+Registered in 0.003331 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 89.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 56.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.067 seconds
+- Completed reload, in  1.088 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3004 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 135.1 MB.
-System memory in use after: 134.8 MB.
+System memory in use before: 135.6 MB.
+System memory in use after: 135.3 MB.
 
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 3425.
-Total: 5.697500 ms (FindLiveObjects: 0.488400 ms CreateObjectMapping: 0.134600 ms MarkObjects: 4.546200 ms  DeleteObjects: 0.526300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/AllIn1SpriteShader/!Start_Here.txt
-  artifactKey: Guid(40da9e3a3b0e50c4599a7abc58b8598e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/!Start_Here.txt using Guid(40da9e3a3b0e50c4599a7abc58b8598e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e43bc525154338782bac9ae3f34490b6') in 0.077159 seconds 
-  Import took 0.084797 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000490 seconds.
-  path: Assets/AllIn1SpriteShader/AllIn1SpriteShaderAssembly.asmdef
-  artifactKey: Guid(91de482a0a233614ab5962ea5f6c24ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/AllIn1SpriteShaderAssembly.asmdef using Guid(91de482a0a233614ab5962ea5f6c24ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '002d0acb8157b4d39f4c62022ab156cf') in 0.018471 seconds 
-  Import took 0.031567 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/AllIn1SpriteShader
-  artifactKey: Guid(938f15fba442d8f4ea675212a2a3e4f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader using Guid(938f15fba442d8f4ea675212a2a3e4f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b2cb7a8fe7988d5567822b7c6c99f01') in 0.010250 seconds 
-  Import took 0.017665 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 40639.594131 seconds.
-  path: Assets/AllIn1SpriteShader/Documentation.pdf
-  artifactKey: Guid(593198a96eec1d74c8549e7b54168503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Documentation.pdf using Guid(593198a96eec1d74c8549e7b54168503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3dedf19ccbc7bd64a4a780996ecbde0') in 0.117491 seconds 
-  Import took 0.269320 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 515.987281 seconds.
-  path: Assets/AllIn1SpriteShader/Materials
-  artifactKey: Guid(345f2705e87e7424683ef2bd17d38c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Materials using Guid(345f2705e87e7424683ef2bd17d38c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b082945dcf4e3f00103df32fbdd9003a') in 0.012079 seconds 
-  Import took 0.020963 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.052191 seconds.
-  path: Assets/AllIn1SpriteShader/Materials/EmptyMaterial.mat
-  artifactKey: Guid(cc460e5b1c6c0bd498b44195a0c3da99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Materials/EmptyMaterial.mat using Guid(cc460e5b1c6c0bd498b44195a0c3da99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13456a627b8d0190932283d67c412e91') in 0.614778 seconds 
-  Import took 0.624738 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000414 seconds.
-  path: Assets/AllIn1SpriteShader/Materials/UIStencil.mat
-  artifactKey: Guid(7ef34f26b8117334c8ecd9c27a45e2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Materials/UIStencil.mat using Guid(7ef34f26b8117334c8ecd9c27a45e2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ddf596fb00281adada2fb3e97a4231c') in 0.037143 seconds 
-  Import took 0.046254 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000586 seconds.
-  path: Assets/AllIn1SpriteShader/Materials/ScaledTIme.mat
-  artifactKey: Guid(3241ea466d4f8334898daf420de4026b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Materials/ScaledTIme.mat using Guid(3241ea466d4f8334898daf420de4026b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c58dce520e8a72e8355ebb39aa7653af') in 0.040366 seconds 
-  Import took 0.051057 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.010022 seconds.
-  path: Assets/AllIn1SpriteShader/Materials/ScaledTIme.mat
-  artifactKey: Guid(3241ea466d4f8334898daf420de4026b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Materials/ScaledTIme.mat using Guid(3241ea466d4f8334898daf420de4026b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c58dce520e8a72e8355ebb39aa7653af') in 0.020150 seconds 
-  Import took 0.030576 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 366.904323 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/seamlessNoise.png
-  artifactKey: Guid(7aad8c583ef292e48b06af0d1f2fab97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/seamlessNoise.png using Guid(7aad8c583ef292e48b06af0d1f2fab97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e18215cbe7499aeeb0c9fca26b7b0c70') in 0.066757 seconds 
-  Import took 0.076451 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.015639 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/seamlessNoise.png
-  artifactKey: Guid(7aad8c583ef292e48b06af0d1f2fab97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/seamlessNoise.png using Guid(7aad8c583ef292e48b06af0d1f2fab97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e18215cbe7499aeeb0c9fca26b7b0c70') in 0.027418 seconds 
-  Import took 0.036358 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 108.945837 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/fire2.png
-  artifactKey: Guid(677cca399782dea41aedc1d292ecb67d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/fire2.png using Guid(677cca399782dea41aedc1d292ecb67d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31e00f410ff245546558360b5c878c2d') in 0.025743 seconds 
-  Import took 0.075029 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027014 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/fire2.png
-  artifactKey: Guid(677cca399782dea41aedc1d292ecb67d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/fire2.png using Guid(677cca399782dea41aedc1d292ecb67d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31e00f410ff245546558360b5c878c2d') in 0.035699 seconds 
-  Import took 0.046288 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 72.418128 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-downwell.png
-  artifactKey: Guid(279657edc397ece4b8029c727adf6ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-downwell.png using Guid(279657edc397ece4b8029c727adf6ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1270c67081e6c9721a27ef1170e5d95') in 0.026796 seconds 
-  Import took 0.037746 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028555 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-downwell.png
-  artifactKey: Guid(279657edc397ece4b8029c727adf6ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-downwell.png using Guid(279657edc397ece4b8029c727adf6ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1270c67081e6c9721a27ef1170e5d95') in 0.015470 seconds 
-  Import took 0.027044 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 588.955975 seconds.
-  path: Assets/Prefabs/PlaceableTile.prefab
-  artifactKey: Guid(affd18dc426bf85459dbb251f4e9f80d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PlaceableTile.prefab using Guid(affd18dc426bf85459dbb251f4e9f80d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ff7c14739e3f084ca0aeeb7c63bf294') in 0.093380 seconds 
-  Import took 0.101384 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 58.577277 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Materials/Color Ramp Gradient.mat
-  artifactKey: Guid(1c07bf10ccbd5c643b7a3d99b400a745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Materials/Color Ramp Gradient.mat using Guid(1c07bf10ccbd5c643b7a3d99b400a745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c8374b14450ff8bd88d02e2fe274fb6') in 0.163160 seconds 
-  Import took 0.171240 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000396 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Materials/Fire.mat
-  artifactKey: Guid(a186aad8f5f9dd04d910c7e3174834c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Materials/Fire.mat using Guid(a186aad8f5f9dd04d910c7e3174834c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b7d84affe7fab55ade6116f8a60e74e') in 0.106604 seconds 
-  Import took 0.117662 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000364 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Materials/DemoGradient.mat
-  artifactKey: Guid(473fd0e814452c4488d6794c3f24dff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Materials/DemoGradient.mat using Guid(473fd0e814452c4488d6794c3f24dff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaec6dbec0ced0a205fc79d3f12c1b63') in 0.122908 seconds 
-  Import took 0.133832 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000426 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Materials/Color Ramp Gradient.mat
-  artifactKey: Guid(1c07bf10ccbd5c643b7a3d99b400a745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Materials/Color Ramp Gradient.mat using Guid(1c07bf10ccbd5c643b7a3d99b400a745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c8374b14450ff8bd88d02e2fe274fb6') in 0.020627 seconds 
-  Import took 0.031010 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000435 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Materials/DemoGradient.mat
-  artifactKey: Guid(473fd0e814452c4488d6794c3f24dff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Materials/DemoGradient.mat using Guid(473fd0e814452c4488d6794c3f24dff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaec6dbec0ced0a205fc79d3f12c1b63') in 0.018378 seconds 
-  Import took 0.028688 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000480 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Materials/FireSoldier.mat
-  artifactKey: Guid(cd0693e274874cc4f8ffd67a41ebe801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Materials/FireSoldier.mat using Guid(cd0693e274874cc4f8ffd67a41ebe801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea8a03b3f9f392ccb3a2763b2b9f42a0') in 0.093317 seconds 
-  Import took 0.120412 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004876 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Materials/FireSoldier.mat
-  artifactKey: Guid(cd0693e274874cc4f8ffd67a41ebe801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Materials/FireSoldier.mat using Guid(cd0693e274874cc4f8ffd67a41ebe801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea8a03b3f9f392ccb3a2763b2b9f42a0') in 0.018114 seconds 
-  Import took 0.029496 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.027104 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.20 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.449 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2887 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.8 MB.
-System memory in use after: 132.5 MB.
-
-Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3511.
-Total: 6.257200 ms (FindLiveObjects: 0.559900 ms CreateObjectMapping: 0.205700 ms MarkObjects: 4.970000 ms  DeleteObjects: 0.518200 ms)
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 3427.
+Total: 2.967700 ms (FindLiveObjects: 0.345800 ms CreateObjectMapping: 0.082900 ms MarkObjects: 2.259200 ms  DeleteObjects: 0.277700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -301,619 +85,104 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 111.434174 seconds.
-  path: Assets/AllIn1SpriteShader/Scripts
-  artifactKey: Guid(4e5ef1ce32696cd4c8ddbe3e0e172819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Scripts using Guid(4e5ef1ce32696cd4c8ddbe3e0e172819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e5c5627625157adbb72f5012f4bb01b') in 0.015925 seconds 
-  Import took 0.065315 seconds .
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6f5bfa5e45b58df696178bf145db4e8') in 0.083522 seconds 
+  Import took 0.089342 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.007679 seconds.
-  path: Assets/AllIn1SpriteShader/Resources
-  artifactKey: Guid(9e1c9c4c494c23041897e13ab5bacecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Resources using Guid(9e1c9c4c494c23041897e13ab5bacecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8396ea2b42f331b73c552acd8b558d0a') in 0.008228 seconds 
-  Import took 0.016662 seconds .
+  Time since last request: 0.000288 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUI Button.prefab
+  artifactKey: Guid(f6ce33b91f6ffe54cadacbf4bb112440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUI Button.prefab using Guid(f6ce33b91f6ffe54cadacbf4bb112440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6abb7bf330a9077de4bcfbf6f9bd6fa') in 0.044451 seconds 
+  Import took 0.049714 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.786765 seconds.
-  path: Assets/AllIn1SpriteShader/Resources/AllIn1SpriteShaderScaledTime.shader
-  artifactKey: Guid(f3622b3ac1631ea409b0f5811034f3a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Resources/AllIn1SpriteShaderScaledTime.shader using Guid(f3622b3ac1631ea409b0f5811034f3a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3732ee3a9e7b911eb30b866d0fb17be1') in 0.029980 seconds 
-  Import took 0.079106 seconds .
+  Time since last request: 0.000190 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUI BitField.prefab
+  artifactKey: Guid(7c78b588b2e1f7c4a86ca4a985cf6e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUI BitField.prefab using Guid(7c78b588b2e1f7c4a86ca4a985cf6e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c3940ff8730237b1342b81880bedc82') in 0.059538 seconds 
+  Import took 0.065638 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.364851 seconds.
-  path: Assets/AllIn1SpriteShader/Resources/AllIn1SpriteShaderScaledTime.shader
-  artifactKey: Guid(f3622b3ac1631ea409b0f5811034f3a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Resources/AllIn1SpriteShaderScaledTime.shader using Guid(f3622b3ac1631ea409b0f5811034f3a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3732ee3a9e7b911eb30b866d0fb17be1') in 0.003960 seconds 
-  Import took 0.013981 seconds .
+  Time since last request: 193.872473 seconds.
+  path: Assets/Shader/LaserShader.shadergraph
+  artifactKey: Guid(cec59298ea9548a48bc59d88621d08c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/LaserShader.shadergraph using Guid(cec59298ea9548a48bc59d88621d08c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a7621a434613ad98ad969e82d320cce') in 0.009749 seconds 
+  Import took 0.015572 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.391849 seconds.
-  path: Assets/AllIn1SpriteShader/Textures
-  artifactKey: Guid(9c6641ac06ac9d643898c55a675118f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures using Guid(9c6641ac06ac9d643898c55a675118f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea7e6e24098fb3b9f662eef82dde5b15') in 0.009055 seconds 
-  Import took 0.017673 seconds .
+  Time since last request: 1.081302 seconds.
+  path: Assets/Shader/LaserShader.shadergraph
+  artifactKey: Guid(cec59298ea9548a48bc59d88621d08c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/LaserShader.shadergraph using Guid(cec59298ea9548a48bc59d88621d08c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a7621a434613ad98ad969e82d320cce') in 0.003965 seconds 
+  Import took 0.008819 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.049763 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/black.png
-  artifactKey: Guid(0b8da974a6429b8489e21c2a5d8dd509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/black.png using Guid(0b8da974a6429b8489e21c2a5d8dd509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e3c0c2565175bdb2677af288dc67e4a') in 0.105518 seconds 
-  Import took 0.113222 seconds .
+  Time since last request: 75866.671678 seconds.
+  path: Assets/Settings/2D Volume.asset
+  artifactKey: Guid(fb717fd570c77ee4c860fcb0636447b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/2D Volume.asset using Guid(fb717fd570c77ee4c860fcb0636447b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b50bb57dd80b71ae30c3470c4c71332e') in 0.105721 seconds 
+  Import took 0.214620 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/toonSeamlessNoise.png
-  artifactKey: Guid(f96aebb9bcd1e3b44bafbb23b1bdac88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/toonSeamlessNoise.png using Guid(f96aebb9bcd1e3b44bafbb23b1bdac88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e85da18af45c7dfb4fa198cbb61062b') in 0.030089 seconds 
-  Import took 0.038838 seconds .
+  Time since last request: 4.138802 seconds.
+  path: Assets/Settings/2D Volume.asset
+  artifactKey: Guid(fb717fd570c77ee4c860fcb0636447b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/2D Volume.asset using Guid(fb717fd570c77ee4c860fcb0636447b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6e1df7dfe811745e0ed4304f8114ce5') in 0.061042 seconds 
+  Import took 0.072410 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000410 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/white.png
-  artifactKey: Guid(839adabbc5de26041bac66450214a831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/white.png using Guid(839adabbc5de26041bac66450214a831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea52bff35ef5ebf2e2a54c43b24f5d5') in 0.024348 seconds 
-  Import took 0.034624 seconds .
+  Time since last request: 144.420281 seconds.
+  path: Assets/Settings/2D Volume Pro.asset
+  artifactKey: Guid(fa4d49df26bd5ad46b24808e21fdee5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/2D Volume Pro.asset using Guid(fa4d49df26bd5ad46b24808e21fdee5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06e6b6522fe563cb18eab1bbdefecf2a') in 0.018893 seconds 
+  Import took 0.027887 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000411 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/flameNoise.png
-  artifactKey: Guid(806e236bc12668e4da974bb8f536d28f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/flameNoise.png using Guid(806e236bc12668e4da974bb8f536d28f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36a09cbe01235f229984fad44d31c81f') in 0.032275 seconds 
-  Import took 0.042380 seconds .
+  Time since last request: 4.909002 seconds.
+  path: Assets/Settings/2D Volume Pro.asset
+  artifactKey: Guid(fa4d49df26bd5ad46b24808e21fdee5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/2D Volume Pro.asset using Guid(fa4d49df26bd5ad46b24808e21fdee5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6a268822e6697dd0507966ef07f283f') in 0.007674 seconds 
+  Import took 0.016787 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000418 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/UVChecker.png
-  artifactKey: Guid(a4a73598226c9dd48aedc26a44264bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/UVChecker.png using Guid(a4a73598226c9dd48aedc26a44264bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b559f75a8a966ed96c7abb5d37e8657f') in 0.024732 seconds 
-  Import took 0.033469 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000658 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/gradient.png
-  artifactKey: Guid(b2ae57e82cd4b4d4ebfa9986f7c77c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/gradient.png using Guid(b2ae57e82cd4b4d4ebfa9986f7c77c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6262a193e6514df258c306e363cc6150') in 0.027485 seconds 
-  Import took 0.038096 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000338 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/CustomEditorImage.png
-  artifactKey: Guid(917b41800d6604d4e99bef50da598d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/CustomEditorImage.png using Guid(917b41800d6604d4e99bef50da598d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0239a22e6d7da22d656338e38a4ef09') in 0.023498 seconds 
-  Import took 0.032818 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000480 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/flameNoise2.png
-  artifactKey: Guid(e3763a0fd85c67f4f9f31b55f886d31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/flameNoise2.png using Guid(e3763a0fd85c67f4f9f31b55f886d31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '278d719472503e36d248a1bcdbfa8db2') in 0.031998 seconds 
-  Import took 0.042381 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000339 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/gradient2.png
-  artifactKey: Guid(dbaa905cec0d2b944b5d1ebdbc3ceb1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/gradient2.png using Guid(dbaa905cec0d2b944b5d1ebdbc3ceb1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3631a23ef9a066985e6ed93a59b43d76') in 0.025610 seconds 
-  Import took 0.036639 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000567 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/fire.png
-  artifactKey: Guid(253ade5030af1b643bf9a54cceb26f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/fire.png using Guid(253ade5030af1b643bf9a54cceb26f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '894d61dca3bc66e7892984be3343def7') in 0.028055 seconds 
-  Import took 0.039620 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/rainbow.png
-  artifactKey: Guid(74087f6d03f233e4a8a142fa01f9e5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/rainbow.png using Guid(74087f6d03f233e4a8a142fa01f9e5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7683543ca175cb9553f90a5ad5e4973') in 0.024997 seconds 
-  Import took 0.036246 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.782951 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/NormalMaps
-  artifactKey: Guid(c509d09ace1b4f84da7401dc3c5616a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/NormalMaps using Guid(c509d09ace1b4f84da7401dc3c5616a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd136028723d6683d14424addd5e707cf') in 0.011570 seconds 
-  Import took 0.018558 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.395565 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures
-  artifactKey: Guid(5dc994715c67a694eafe9d1fba38560d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures using Guid(5dc994715c67a694eafe9d1fba38560d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51bdd26e833f5f39cbe81eb7bb194001') in 0.008596 seconds 
-  Import took 0.055679 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.159415 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/gradientTexture_1.png
-  artifactKey: Guid(7062336ff4b66994caa2ba23c8651342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/gradientTexture_1.png using Guid(7062336ff4b66994caa2ba23c8651342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a08cc3b1608c00cf33ad06050f1217c') in 0.062528 seconds 
-  Import took 0.071552 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000324 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-mist-gb-1x.png
-  artifactKey: Guid(359431ef2af87794198688f7c632c1e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-mist-gb-1x.png using Guid(359431ef2af87794198688f7c632c1e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1039f2be783fd575348cf3ab901639d7') in 0.016277 seconds 
-  Import took 0.023875 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-gameboy.psd
-  artifactKey: Guid(285a35f6ccf7b1a44b6c198e96105173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-gameboy.psd using Guid(285a35f6ccf7b1a44b6c198e96105173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '370883118489599d2e83e1fddc02acef') in 0.019803 seconds 
-  Import took 0.028119 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000302 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-neapolitan.psd
-  artifactKey: Guid(cbb1819678c0e5a4c82464e4b1c0ce1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-neapolitan.psd using Guid(cbb1819678c0e5a4c82464e4b1c0ce1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '427471bd86e9b10ce35cf447af07386f') in 0.016740 seconds 
-  Import took 0.023717 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-platinum-1x.png
-  artifactKey: Guid(6fc6eee88963e63429ed61892dadd042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-platinum-1x.png using Guid(6fc6eee88963e63429ed61892dadd042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '467f9e592d26e3cc907714f515a7eee6') in 0.017935 seconds 
-  Import took 0.025717 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000321 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/gradientTexture_2.png
-  artifactKey: Guid(2eb26501acf862843a55a2e79af0c3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/gradientTexture_2.png using Guid(2eb26501acf862843a55a2e79af0c3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd68ff3f5ecb97c26ca0ad3145a1a51f2') in 0.028613 seconds 
-  Import took 0.036104 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-nintendo-gameboy-black-zero-1x.png
-  artifactKey: Guid(2a39734b8956da843adee1646c75554f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-nintendo-gameboy-black-zero-1x.png using Guid(2a39734b8956da843adee1646c75554f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b030478d481db0838d37e692894207ba') in 0.018222 seconds 
-  Import took 0.024772 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000277 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-nintendo-gameboy-bgb-1x.png
-  artifactKey: Guid(8700b580d2f74da46b4cbcb5fde72d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-nintendo-gameboy-bgb-1x.png using Guid(8700b580d2f74da46b4cbcb5fde72d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4f1385c5b3d1078b31d367b059116f7') in 0.016633 seconds 
-  Import took 0.025147 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000403 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-cool.psd
-  artifactKey: Guid(bf981ecbfe649344eafdbc788f6dab0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-cool.psd using Guid(bf981ecbfe649344eafdbc788f6dab0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3236e8580e0c0dba2942e9e251fec75b') in 0.017084 seconds 
-  Import took 0.026768 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000363 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/shadeRamp.png
-  artifactKey: Guid(555ec36b8c5401649af750d9738c7ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/shadeRamp.png using Guid(555ec36b8c5401649af750d9738c7ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36f71a3ddba903b6ffe8ac4beb082118') in 0.024813 seconds 
-  Import took 0.031890 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-metroid-ii-sgb-1x.png
-  artifactKey: Guid(54b37de4aa07caa4797254cf2351058f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-metroid-ii-sgb-1x.png using Guid(54b37de4aa07caa4797254cf2351058f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55a9e76b89d9739911c07badc79f363a') in 0.020709 seconds 
-  Import took 0.032494 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000529 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-bumbleberry.psd
-  artifactKey: Guid(a9058d3dd9b9dd14cbc6b16db7859653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-bumbleberry.psd using Guid(a9058d3dd9b9dd14cbc6b16db7859653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a40fd417d48390706c3a3ab365d7cd3') in 0.022674 seconds 
-  Import took 0.033428 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000368 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-earthy.psd
-  artifactKey: Guid(b3cfc9bf16a1cfa4ab153965dff63ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-earthy.psd using Guid(b3cfc9bf16a1cfa4ab153965dff63ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec256e85e985077703e9fadf08827bcb') in 0.021383 seconds 
-  Import took 0.031618 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000405 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-gameboy-pop-1x.png
-  artifactKey: Guid(763e13699209a614b8800c76fc9dee48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-gameboy-pop-1x.png using Guid(763e13699209a614b8800c76fc9dee48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20adda0b5d7aec07c1db2823772037cb') in 0.023513 seconds 
-  Import took 0.037294 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000449 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/toonShadeRamp.png
-  artifactKey: Guid(536abb94c423a3443b5151f665cdc017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/toonShadeRamp.png using Guid(536abb94c423a3443b5151f665cdc017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11f7c71e067faa4186745e1669050b64') in 0.022318 seconds 
-  Import took 0.043318 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000451 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-gameboy-pop-1x.png
-  artifactKey: Guid(763e13699209a614b8800c76fc9dee48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/palette-gameboy-pop-1x.png using Guid(763e13699209a614b8800c76fc9dee48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20adda0b5d7aec07c1db2823772037cb') in 0.011531 seconds 
-  Import took 0.022720 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026759 seconds.
-  path: Assets/AllIn1SpriteShader/Textures/GradientTextures/toonShadeRamp.png
-  artifactKey: Guid(536abb94c423a3443b5151f665cdc017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Textures/GradientTextures/toonShadeRamp.png using Guid(536abb94c423a3443b5151f665cdc017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11f7c71e067faa4186745e1669050b64') in 0.011347 seconds 
-  Import took 0.022668 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.130037 seconds.
-  path: Assets/AllIn1SpriteShader/Editor
-  artifactKey: Guid(88005189a0eaefe4aa34961fe0208e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Editor using Guid(88005189a0eaefe4aa34961fe0208e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c085e1a98fcee8d3607918514e3c8689') in 0.009184 seconds 
-  Import took 0.054634 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.151562 seconds.
-  path: Assets/AllIn1SpriteShader/Demo
-  artifactKey: Guid(8547c35f10eb6ad4697607cdde60ad3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo using Guid(8547c35f10eb6ad4697607cdde60ad3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '033bbf92a1afb6f7a881c00d47e01833') in 0.009596 seconds 
-  Import took 0.056460 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.577901 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Animation
-  artifactKey: Guid(5dda08a101e9e6f4eb3bc2eaac144b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Animation using Guid(5dda08a101e9e6f4eb3bc2eaac144b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3374ed965e754c33dd49eebe66e8fc6c') in 0.009565 seconds 
-  Import took 0.056857 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.826224 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Fonts
-  artifactKey: Guid(c2e2455655940ed4ca1596166ba120ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Fonts using Guid(c2e2455655940ed4ca1596166ba120ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17cdb81be57a886122a4d32cfa4300e7') in 0.012087 seconds 
-  Import took 0.021020 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.069358 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Fonts/CaviarDreams.ttf
-  artifactKey: Guid(8125849ac2a1e6742b3cad98aa210e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Fonts/CaviarDreams.ttf using Guid(8125849ac2a1e6742b3cad98aa210e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c71a633e06eb088b5dd66d49b4f07be1') in 0.330551 seconds 
-  Import took 0.341708 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000507 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Fonts/CaviarDreams_Bold.ttf
-  artifactKey: Guid(868b1fc2a144d3d459c5f34d64b52eb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Fonts/CaviarDreams_Bold.ttf using Guid(868b1fc2a144d3d459c5f34d64b52eb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6a7628f695e62b235004d038d93f8cc') in 0.029312 seconds 
-  Import took 0.039814 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000604 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Fonts/PoetsenOne-Regular.ttf
-  artifactKey: Guid(a4e6a5491519adb45919dc87eff28e55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Fonts/PoetsenOne-Regular.ttf using Guid(a4e6a5491519adb45919dc87eff28e55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fe54ce174ba4cc107f6d5f2db08867f') in 0.029491 seconds 
-  Import took 0.039841 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.940058 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Materials
-  artifactKey: Guid(ddc21e094ffb34f4389bb47b77d54f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Materials using Guid(ddc21e094ffb34f4389bb47b77d54f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f3b9b5d95c2b390c31b6363121d5a07') in 0.002957 seconds 
-  Import took 0.009409 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.048196 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Materials/Ice.mat
-  artifactKey: Guid(e4599046180b0ac49b3df99ab01b3e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Materials/Ice.mat using Guid(e4599046180b0ac49b3df99ab01b3e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c1a7d5b7ece06bb5a67b8b5b89d5fb0') in 0.084548 seconds 
-  Import took 0.094976 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000372 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Materials/ShieldSoldier.mat
-  artifactKey: Guid(8a80b25e622f6c84aac445df7e206085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Materials/ShieldSoldier.mat using Guid(8a80b25e622f6c84aac445df7e206085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e396dc0832db8ec4290fd9ed2e6337a5') in 0.092266 seconds 
-  Import took 0.101136 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Materials/MagicRing.mat
-  artifactKey: Guid(1c2c3a51f881cb443906a57116cf56fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Materials/MagicRing.mat using Guid(1c2c3a51f881cb443906a57116cf56fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e59ef82fdd4a4e25c4f0faa068a91cf') in 0.432544 seconds 
-  Import took 0.441472 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000437 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Materials/SnowFlake.mat
-  artifactKey: Guid(aae53a69b285d6f4aad0e6953245bc7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Materials/SnowFlake.mat using Guid(aae53a69b285d6f4aad0e6953245bc7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33ea414bffcde98f6f6e32eacc93d4c8') in 0.029918 seconds 
-  Import took 0.040233 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000422 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Materials/IceSoldier.mat
-  artifactKey: Guid(d27799974f79b894196aeeef8bac53af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Materials/IceSoldier.mat using Guid(d27799974f79b894196aeeef8bac53af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbe4d3bf60b7525f88876bb941e64c94') in 0.141506 seconds 
-  Import took 0.191458 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000476 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Materials/Shield.mat
-  artifactKey: Guid(4396a2d1265c9414e810fdf77d8238b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Materials/Shield.mat using Guid(4396a2d1265c9414e810fdf77d8238b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55835060f445b57aaa15c2d5a69f6d4b') in 0.143315 seconds 
-  Import took 0.153451 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000709 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Materials/Outline1.mat
-  artifactKey: Guid(2fff2435ee99439438c463e2ce768283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Materials/Outline1.mat using Guid(2fff2435ee99439438c463e2ce768283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed5fe307f5fd443195694e9e07934c3e') in 0.068741 seconds 
-  Import took 0.080721 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000431 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Materials/Sparks.mat
-  artifactKey: Guid(e2fd28a60d223ba4cb25e286da19b13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Materials/Sparks.mat using Guid(e2fd28a60d223ba4cb25e286da19b13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf180b4e46a0e0f28ab94e3c64fc9693') in 0.026580 seconds 
-  Import took 0.038505 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.480901 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Textures/shield.png
-  artifactKey: Guid(2f5c9cbfde2d0384bb53189b0d0f06d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Textures/shield.png using Guid(2f5c9cbfde2d0384bb53189b0d0f06d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfc68153ba6dacc0301053e1b3380d2c') in 0.063397 seconds 
-  Import took 0.074284 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000420 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Textures/shieldGlow.png
-  artifactKey: Guid(81687001a52d8024fb3706ba7619ad4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Textures/shieldGlow.png using Guid(81687001a52d8024fb3706ba7619ad4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c5448a81e74498816901160db98696c') in 0.027411 seconds 
-  Import took 0.039397 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.521008 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Textures/spaceSoldierGlow.png
-  artifactKey: Guid(8608ef90f91271745a17f7210fe1e7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Textures/spaceSoldierGlow.png using Guid(8608ef90f91271745a17f7210fe1e7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ea1ce3f4427c4999a67a2c0bb69e850') in 0.023150 seconds 
-  Import took 0.031470 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001290 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Textures/spaceSoldierGlow.png
-  artifactKey: Guid(8608ef90f91271745a17f7210fe1e7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Textures/spaceSoldierGlow.png using Guid(8608ef90f91271745a17f7210fe1e7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ea1ce3f4427c4999a67a2c0bb69e850') in 0.012356 seconds 
-  Import took 0.019185 seconds .
+  Time since last request: 0.037246 seconds.
+  path: Assets/Settings/2D Volume Pro.asset
+  artifactKey: Guid(fa4d49df26bd5ad46b24808e21fdee5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/2D Volume Pro.asset using Guid(fa4d49df26bd5ad46b24808e21fdee5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6a268822e6697dd0507966ef07f283f') in 0.007723 seconds 
+  Import took 0.016774 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008363 seconds.
+Registered in 0.248560 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.18 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.985 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.82 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2887 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.2 MB.
-System memory in use after: 132.9 MB.
-
-Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3566.
-Total: 6.223600 ms (FindLiveObjects: 0.554800 ms CreateObjectMapping: 0.207500 ms MarkObjects: 4.918300 ms  DeleteObjects: 0.539900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 131.013451 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Textures/backMountain.png
-  artifactKey: Guid(758ac31a9bff9ac4181f54de54a6ecb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Textures/backMountain.png using Guid(758ac31a9bff9ac4181f54de54a6ecb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a44a99f4b2f3bb04f318cb3c3c3993b2') in 0.098013 seconds 
-  Import took 0.106709 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000306 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Textures/coalsEmissive.png
-  artifactKey: Guid(487cb2374bc49b848a1f4577212201cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Textures/coalsEmissive.png using Guid(487cb2374bc49b848a1f4577212201cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2815b38ce2d33f0ac93fa3b29782baa3') in 0.034191 seconds 
-  Import took 0.043219 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000441 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Textures/Circle.png
-  artifactKey: Guid(4b40fc0f65c85f14fbc9c7c5f40ca686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Textures/Circle.png using Guid(4b40fc0f65c85f14fbc9c7c5f40ca686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8164a4c71571a69d28ce70769aa336d1') in 0.026092 seconds 
-  Import took 0.037838 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000417 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Textures/coals.png
-  artifactKey: Guid(be304275dbf36014ca9828884588ac47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Textures/coals.png using Guid(be304275dbf36014ca9828884588ac47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feab60c3acbc29b3241795a2be45e94c') in 0.032523 seconds 
-  Import took 0.045271 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000332 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Textures/BoyGirl.png
-  artifactKey: Guid(07103c52b3aaeca4da8a83361edd059f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Textures/BoyGirl.png using Guid(07103c52b3aaeca4da8a83361edd059f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42b6517a673e512ce332cac44ffae94c') in 0.030459 seconds 
-  Import took 0.038077 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.075240 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Textures/flag.png
-  artifactKey: Guid(adce45105552071409c959137cb5b670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Textures/flag.png using Guid(adce45105552071409c959137cb5b670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2df358a3df22442c00cfa053509516c0') in 0.034259 seconds 
-  Import took 0.043069 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Textures/flameShape.png
-  artifactKey: Guid(bd6f48b4407043345b1a3a07df8c4d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Textures/flameShape.png using Guid(bd6f48b4407043345b1a3a07df8c4d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a96d9d56a61c2c740758fa3db4d46728') in 0.024051 seconds 
-  Import took 0.031478 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000306 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Textures/grass.png
-  artifactKey: Guid(cf7e1f6ebb800154db2b215cba9330ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Textures/grass.png using Guid(cf7e1f6ebb800154db2b215cba9330ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeb28a0c77dc2c52f41153eb56cf348b') in 0.045719 seconds 
-  Import took 0.052800 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000295 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Textures/IceTexture.png
-  artifactKey: Guid(49cc75da86b2bb949b1235ad2a384f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Textures/IceTexture.png using Guid(49cc75da86b2bb949b1235ad2a384f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd47324e80d0b6d3fad3d1540bf5d7234') in 0.026669 seconds 
-  Import took 0.036344 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.504753 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Textures/Magic1.png
-  artifactKey: Guid(7f33f36658f399a44be84455bcd911b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Textures/Magic1.png using Guid(7f33f36658f399a44be84455bcd911b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c2f1ae089ee61405973d0745408d44e') in 0.062038 seconds 
-  Import took 0.073424 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000437 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Textures/Magic2.png
-  artifactKey: Guid(2ea3ea54c499d314f957e0a47dc11c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Textures/Magic2.png using Guid(2ea3ea54c499d314f957e0a47dc11c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36b1c00c4e54c2d5f7a4658956e17a5a') in 0.026793 seconds 
-  Import took 0.037200 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007685 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.78 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.088 seconds
+- Completed reload, in  2.324 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2887 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.2 MB.
-System memory in use after: 132.9 MB.
+System memory in use before: 128.0 MB.
+System memory in use after: 127.6 MB.
 
-Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3583.
-Total: 7.916100 ms (FindLiveObjects: 0.785000 ms CreateObjectMapping: 0.303700 ms MarkObjects: 6.199800 ms  DeleteObjects: 0.623400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006164 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.18 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.933 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2887 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.3 MB.
-System memory in use after: 133.0 MB.
-
-Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3586.
-Total: 6.394000 ms (FindLiveObjects: 0.565700 ms CreateObjectMapping: 0.221100 ms MarkObjects: 5.027400 ms  DeleteObjects: 0.576200 ms)
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3430.
+Total: 6.172800 ms (FindLiveObjects: 0.537100 ms CreateObjectMapping: 0.214400 ms MarkObjects: 4.883400 ms  DeleteObjects: 0.534900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -928,34 +197,34 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 304.070170 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Materials/Shield.mat
-  artifactKey: Guid(4396a2d1265c9414e810fdf77d8238b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Materials/Shield.mat using Guid(4396a2d1265c9414e810fdf77d8238b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42280693be514c23a53da38ad00e4fbb') in 0.313743 seconds 
-  Import took 0.324740 seconds .
+  Time since last request: 149.411027 seconds.
+  path: Assets/Settings/2D Volume Pro.asset
+  artifactKey: Guid(fa4d49df26bd5ad46b24808e21fdee5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/2D Volume Pro.asset using Guid(fa4d49df26bd5ad46b24808e21fdee5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '549a63f15fe9fbff7dbd9b2a2dce70e1') in 0.044144 seconds 
+  Import took 0.093511 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.060879 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/Scripts
-  artifactKey: Guid(d00a14e1119cac04092102f8e78ad652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/Scripts using Guid(d00a14e1119cac04092102f8e78ad652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbc77d9d6a4b59281aa78364476c3c36') in 0.003143 seconds 
-  Import took 0.010813 seconds .
+  Time since last request: 9903.485207 seconds.
+  path: Assets/Shader/LaserShader.shadergraph
+  artifactKey: Guid(cec59298ea9548a48bc59d88621d08c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/LaserShader.shadergraph using Guid(cec59298ea9548a48bc59d88621d08c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6d8ec0dc30a843307e76b9f5e6a96d4') in 0.031077 seconds 
+  Import took 0.103076 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.745295 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/PostProcessProfiles
-  artifactKey: Guid(fb1e0660363295c4db411edfff6675eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/PostProcessProfiles using Guid(fb1e0660363295c4db411edfff6675eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7107c254fac6a5aff453631a6cfa3eb1') in 0.010366 seconds 
-  Import took 0.058659 seconds .
+  Time since last request: 108.604880 seconds.
+  path: Assets/Shader/LaserShader.shadergraph
+  artifactKey: Guid(cec59298ea9548a48bc59d88621d08c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/LaserShader.shadergraph using Guid(cec59298ea9548a48bc59d88621d08c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cc487b250a264e01570a0c0c96fa9d1') in 0.003710 seconds 
+  Import took 0.009515 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.479166 seconds.
-  path: Assets/AllIn1SpriteShader/Demo/PostProcessProfiles/AllIn1PostProcessing.asset
-  artifactKey: Guid(c12f806a2a3ae954ebb1771c65441e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllIn1SpriteShader/Demo/PostProcessProfiles/AllIn1PostProcessing.asset using Guid(c12f806a2a3ae954ebb1771c65441e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7336f4e79ef73a3be6c312de357d859') in 0.020507 seconds 
-  Import took 0.031702 seconds .
+  Time since last request: 12.971062 seconds.
+  path: Assets/Prefabs/PlaceableTile.prefab
+  artifactKey: Guid(affd18dc426bf85459dbb251f4e9f80d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PlaceableTile.prefab using Guid(affd18dc426bf85459dbb251f4e9f80d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aed75f81526eb9d94a927f5dfcf53fc2') in 0.317006 seconds 
+  Import took 0.322783 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
